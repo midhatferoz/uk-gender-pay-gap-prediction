@@ -1,0 +1,64 @@
+{
+    "project": "UK Gender Pay Gap Prediction",
+    "target_mode": "signed",
+    "stable_band": 1.0,
+    "first_year": 2017,
+    "last_year": 2025,
+    "development_origins": [
+        2023
+    ],
+    "final_holdout_origins": [
+        2024
+    ],
+    "best_model": "HistGradientBoosting",
+    "best_parameters": {
+        "Ridge": {
+            "alpha": 100
+        },
+        "RandomForest": {
+            "max_features": 0.5,
+            "min_samples_leaf": 30
+        },
+        "HistGradientBoosting": {
+            "max_depth": 5,
+            "min_samples_leaf": 20
+        }
+    },
+    "cleaning_log": {
+        "rows_raw": 94205,
+        "rows_after_missing_id_or_gap": 94205,
+        "duplicates_dropped": 4,
+        "quartile_sum_errors_dropped": 0,
+        "winsorized": false,
+        "rows_clean": 94201
+    },
+    "raw_rows": 94205,
+    "cleaned_rows": 94201,
+    "panel_rows": 74777,
+    "feature_count": 19,
+    "features": [
+        "gap_median",
+        "gap_mean",
+        "gap_prev",
+        "change_prev",
+        "employer_size_ord",
+        "submitted_late",
+        "days_late",
+        "is_fashion",
+        "is_retail_other",
+        "is_unknown",
+        "bonus_gap_mean",
+        "bonus_gap_median",
+        "male_bonus_pct",
+        "female_bonus_pct",
+        "female_lower_q",
+        "female_lowmid_q",
+        "female_upmid_q",
+        "female_top_q",
+        "fem_gradient"
+    ],
+    "exclude_pandemic": false,
+    "winsorization": "None",
+    "python_version": "3.12.3",
+    "bootstrap_iterations": 500
+}

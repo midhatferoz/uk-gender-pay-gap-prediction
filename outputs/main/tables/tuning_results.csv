@@ -1,0 +1,13 @@
+model,params,mean_val_MAE,n_folds
+Ridge,{'alpha': 0.1},5.316117110739294,3
+Ridge,{'alpha': 1},5.316090683078849,3
+Ridge,{'alpha': 10},5.315830024482018,3
+Ridge,{'alpha': 100},5.313364258847696,3
+RandomForest,"{'max_features': 0.5, 'min_samples_leaf': 10}",5.083183458710567,3
+RandomForest,"{'max_features': 0.5, 'min_samples_leaf': 30}",5.082350724367828,3
+RandomForest,"{'max_features': 1.0, 'min_samples_leaf': 10}",5.104338766987275,3
+RandomForest,"{'max_features': 1.0, 'min_samples_leaf': 30}",5.091041843960531,3
+HistGradientBoosting,"{'max_depth': 3, 'min_samples_leaf': 20}",5.051978368822206,3
+HistGradientBoosting,"{'max_depth': 3, 'min_samples_leaf': 100}",5.076754830720577,3
+HistGradientBoosting,"{'max_depth': 5, 'min_samples_leaf': 20}",5.0459043381788975,3
+HistGradientBoosting,"{'max_depth': 5, 'min_samples_leaf': 100}",5.087393817114232,3
